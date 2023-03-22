@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { ServerSentEvents } from './components/ServerSentEvents';
+import { FetchWithPolling } from './components/Polling';
+
+export const BaseURL = 'http://localhost:8000';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <ServerSentEvents />
+      <FetchWithPolling />
     </div>
   );
 }
