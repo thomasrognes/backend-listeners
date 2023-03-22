@@ -1,4 +1,4 @@
-Enkel applikasjon for testing av Server-Sent events (SSE) og Polling til endepunkter i backend. 
+Applikasjon for testing av Server-Sent events (SSE) og Polling til endepunkter i backend. 
 
 #### Kom i gang
 
