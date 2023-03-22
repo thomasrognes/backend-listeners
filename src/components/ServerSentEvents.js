@@ -38,7 +38,7 @@ export const ServerSentEvents = () => {
 
   return (
     <div>
-      <h1>Server Sent Events</h1>
+      <h2>Server Sent Events</h2>
       <Table stockPrices={stockPrices} />
     </div>
   );
