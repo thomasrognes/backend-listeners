@@ -1,1 +1,21 @@
-Åpne terminal og skriv "yarn start" og åpne et nytt terminalvindu og skriv "node server.js"
+POC for Server-Sent events (SSE) og Polling til endepunkter i backend. 
+
+#### Kom i gang
+
+
+
+Installer avhengigheter 
+```
+yarn install
+```
+
+Kjør opp server med 
+```
+node server.js
+```
+
+Kjør opp applikasjonen med 
+```
+yarn start
+```
+
