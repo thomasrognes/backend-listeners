@@ -1,4 +1,4 @@
-POC for Server-Sent events (SSE) og Polling til endepunkter i backend. 
+Enkel applikasjon for testing av Server-Sent events (SSE) og Polling til endepunkter i backend. 
 
 #### Kom i gang
 
