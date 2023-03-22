@@ -11,7 +11,6 @@ export const Table = (props) => {
 
   return (
     <table>
-      <caption>Stock Prices</caption>
       <thead>
         <tr>
           <th>S/N</th>

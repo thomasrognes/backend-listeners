@@ -6,16 +6,14 @@ export const FetchWithPolling = () => {
   const [stockPrices, setStockPrices] = useState([]);
 
   const fetchStockPrice = () => {
-    fetch(`${BaseURL}/realtime-price-polling`).then((res) =>
-      (res.status === 200 ? res.json() : console.log('wtf')).then((result) => setStockPrices(result.data))
-    );
+    fetch(`${BaseURL}/realtime-price-polling`).then((res) => res.json().then((result) => setStockPrices(result.data)));
   };
 
   useEffect(() => {
     fetchStockPrice();
     const pollingInterval = setInterval(() => {
       fetchStockPrice();
-    }, 1000); // poll every 5 seconds
+    }, 5000); // poll every 5 seconds
 
     return () => {
       clearInterval(pollingInterval);
