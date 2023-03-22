@@ -39,6 +39,7 @@ export const ServerSentEvents = () => {
   return (
     <div>
       <h2>Server Sent Events</h2>
+      <p>Åpen kobling der backend sender oppdateringer til klienten.</p>
       <Table stockPrices={stockPrices} />
     </div>
   );

@@ -8,7 +8,10 @@ export const BaseURL = 'http://localhost:8000';
 function App() {
   return (
     <div className="app">
-      <h1>Backend listeners</h1>
+      <div>
+        <h1>Backend listeners</h1>
+        <p>Åpne devtools for å se hva som skjer i network taben.</p>
+      </div>
       <ServerSentEvents />
       <FetchWithPolling />
     </div>
